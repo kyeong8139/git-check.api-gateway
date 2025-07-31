@@ -6,7 +6,7 @@ import org.springframework.http.server.reactive.ServerHttpRequest;
 
 import lombok.Data;
 
-public abstract class RequestGatewayFilterFactoryTemplate extends AbstractGatewayFilterFactory<RequestGatewayFilterFactoryTemplate.Config> {
+public abstract class PreGatewayFilterFactoryTemplate extends AbstractGatewayFilterFactory<PreGatewayFilterFactoryTemplate.Config> {
 
     @Data
     public static class Config {
@@ -19,7 +19,7 @@ public abstract class RequestGatewayFilterFactoryTemplate extends AbstractGatewa
         private String param;
     }
 
-    public RequestGatewayFilterFactoryTemplate() {
+    public PreGatewayFilterFactoryTemplate() {
         super(Config.class);
     }
 
